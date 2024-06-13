@@ -398,12 +398,12 @@ footer {
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footer-section {
-    width: 200px;
+    margin-bottom: 20px;
 }
 
 .footer-section h4 {
@@ -427,6 +427,7 @@ footer {
 
 .footer-newsletter {
     text-align: center;
+    margin: 20px 0;
 }
 
 .footer-newsletter h4 {
@@ -438,12 +439,16 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
 
 .footer-newsletter input {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
 }
 
 .footer-newsletter button {
