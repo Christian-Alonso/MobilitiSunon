@@ -1,36 +1,323 @@
 body {
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
+.hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.slider {
+    display: flex;
+}
+
+.carousel-inner .slide {
+    flex: 1;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Ocultar las flechas de navegación */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    visibility: hidden; 
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px 0;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-header img {
-    height: 50px;
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.overlay h1 {
+    font-size: 4em; /* Tamaño más grande para el h1 */
+    font-weight: bold; /* Negritas */
+    margin: 0 0 10px 0; /* Separación con el párrafo */
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Estilos adicionales existentes */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+}
+
+.logo {
+    margin: 0 auto; /* Centrar el logo horizontalmente */
+    padding-bottom: 10px; /* Espacio entre el logo y la línea */
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #5a5858;
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
     padding: 0;
+    margin-top: 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #333;
+    padding: 20px 20px;
+    font-weight: bold;
 }
 
-main {
-    padding: 20px;
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.productos {
+    padding: 50px 0;
     text-align: center;
+}
+
+.productos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.categoria-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.categoria-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.categoria-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.categoria-item:hover img {
+    transform: scale(1.1);
+}
+
+.categoria-item:hover .overlay {
+    opacity: 1;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about blockquote {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.news {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.news-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 200px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-item p {
+    margin: 10px 0;
+}
+
+.soluciones {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.soluciones h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: #7cb342;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-newsletter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7cb342;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
