@@ -345,6 +345,7 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: white;
+    margin-bottom: 5px; 
 }
 
 .solutions-hero-image {
