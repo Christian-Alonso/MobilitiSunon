@@ -33,7 +33,6 @@ body {
 
 
 .overlay {
-    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -180,6 +179,7 @@ nav ul li a {
     text-align: center;
     padding: 10px;
 }
+
 
 .categoria-item:hover img {
     transform: scale(1.1);
@@ -427,7 +427,6 @@ footer {
 
 .footer-newsletter {
     text-align: center;
-    margin: 20px 0;
 }
 
 .footer-newsletter h4 {
@@ -475,11 +474,52 @@ footer {
 }
 
 .social-icons a {
-    color: #72bc2f; /* Color verde para los íconos */
+    color: #72bc2f; 
     font-size: 1.5em;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #fff; /* Color blanco en el hover */
+    color: #fff; 
+}
+
+.productos-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -39px;
+}
+.productos-section-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px; 
+    height: 150px; 
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 10; 
+}
+.productos-section-button:hover {
+    background-color: #f9f9f9;
+}
+.productos-section-button i {
+    font-size: 40px; 
+    margin-bottom: 10px;
+}
+.productos-section-active {
+    background-color: #74b816;
+    color: #fff;
+    border: none;
+}
+.productos-section-active:hover {
+    background-color: #66a70c;
 }
