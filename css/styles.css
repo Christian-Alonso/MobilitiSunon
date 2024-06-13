@@ -95,7 +95,7 @@ header {
 
 .divider {
     width: 100%;
-    border-bottom: 1px solid #5a5858;
+    border-bottom: 1px solid #d3d3d3;
     margin-bottom: 20px;
 }
 
@@ -199,6 +199,34 @@ nav ul li a {
     }
 }
 
+.productos-info {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos-info h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.productos-info p {
+    font-size: 1.2em;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .productos-info h2 {
+        font-size: 2em;
+    }
+
+    .productos-info p {
+        font-size: 1em;
+    }
+}
+
 .about {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -207,11 +235,40 @@ nav ul li a {
 
 .about blockquote {
     font-size: 1.2em;
-    color: #666;
+    color: #000;
+    font-weight: bold;
     max-width: 800px;
     margin: 0 auto;
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
+
+
+
+.about blockquote .comilla {
+    width: 40px;
+    height: auto;
+}
+
+.about blockquote span {
+    text-align: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .about blockquote {
+        font-size: 1em;
+        gap: 5px;
+    }
+
+    .about blockquote .comilla {
+        width: 20px;
+    }
+}
+
 
 .news {
     padding: 50px 0;
@@ -223,15 +280,40 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.news-items {
+.carousel-inner {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
     gap: 20px;
-    flex-wrap: wrap;
+}
+
+.carousel-item {
+    display: flex;
+    gap: 20px;
+}
+
+.row {
+    margin: 0; /* Elimina cualquier margen por defecto */
+}
+
+.col-md-3 {
+    position: relative;
+    padding-top: 20px;
+}
+
+.col-md-3:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #ccc; /* Color de la línea gris */
 }
 
 .news-item {
-    width: 200px;
+    width: 80%;
+    margin: auto; /* Centra el contenido dentro de la columna */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .news-item img {
@@ -244,23 +326,67 @@ nav ul li a {
     margin: 10px 0;
 }
 
-.soluciones {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #e0e0e0;
-}
-
-.soluciones h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.explore-btn {
-    padding: 10px 20px;
-    background-color: #7cb342;
-    color: #fff;
-    text-decoration: none;
+.news-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    background-color: #72bc2f;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.solutions-hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.solutions-hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    position: relative;
+}
+
+.solutions-hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente negro */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.solutions-hero h2 {
+    margin: 0 0 20px 0;
+    font-size: 2em;
+}
+
+.solutions-hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #72bc2f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.solutions-hero-button:hover {
+    background-color: black; /* Color negro en el hover */
 }
 
 footer {
@@ -279,8 +405,9 @@ footer {
     width: 200px;
 }
 
-.footer-section h3 {
+.footer-section h4 {
     margin-bottom: 10px;
+    color: #72bc2f; /* Color verde para los títulos */
 }
 
 .footer-section ul {
@@ -299,7 +426,11 @@ footer {
 
 .footer-newsletter {
     text-align: center;
-    margin: 20px 0;
+}
+
+.footer-newsletter h4 {
+    margin-bottom: 10px;
+    color: #72bc2f; /* Color verde para los títulos */
 }
 
 .footer-newsletter form {
@@ -318,7 +449,7 @@ footer {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #7cb342;
+    background-color: #72bc2f;
     color: #fff;
     cursor: pointer;
 }
@@ -335,4 +466,14 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.social-icons a {
+    color: #72bc2f; /* Color verde para los íconos */
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff; /* Color blanco en el hover */
 }
