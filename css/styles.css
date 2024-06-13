@@ -84,8 +84,8 @@ header {
 }
 
 .logo {
-    margin: 0 auto; /* Centrar el logo horizontalmente */
-    padding-bottom: 10px; /* Espacio entre el logo y la línea */
+    margin: 0 auto; 
+    padding-bottom: 10px; 
 }
 
 .logo img {
@@ -115,8 +115,14 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    padding: 20px 20px;
+    padding: 10px 10px;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav ul li a.active-nav-menu {
+    background-color: #72bc2f; 
+    color: #fff; 
 }
 
 @media (max-width: 768px) {
