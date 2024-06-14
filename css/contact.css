@@ -27,3 +27,17 @@ form {
 .btn-success:hover {
     background-color: #218838;
 }
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.fa-2x {
+    color: #000;
+}
