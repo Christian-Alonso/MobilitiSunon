@@ -1,11 +1,28 @@
-$(function(){
-    $("#header").load("header.html", function() {
-        const currentPath = window.location.pathname;
-        $('nav ul li a').each(function() {
-            if ($(this).attr('href') === currentPath) {
-                $(this).addClass('active-nav-menu');
-            }
-        });
-    });
-    $("#footer").load("footer.html");
+document.addEventListener("DOMContentLoaded", function() {
+    loadHeaderFooter();
 });
+
+function loadHeaderFooter() {
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+            setActiveNav();
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+}
+
+function setActiveNav() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active-nav-menu');
+        }
+    });
+}
