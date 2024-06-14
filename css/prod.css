@@ -1,0 +1,231 @@
+.section {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+.content-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.text-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.text-content h2 {
+    font-size: 2.5em;
+}
+.text-content p {
+    font-size: 1.25em;
+}
+.image-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-bottom: 40px;
+}
+
+.container-product {
+    display: flex;
+}
+
+.left-image {
+    width: 300px; /* Tamaño fijo para la imagen izquierda */
+    height: 533px; /* Relación de aspecto 9:16 */
+    background-color: lightgray; /* Placeholder color */
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: lightgray; /* Placeholder color */
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem; /* Tamaño grande para el texto */
+    color: #72bc2f;
+    margin-top: 20px;
+}
+
+.section-product {
+    display: flex;
+    justify-content: center; /* Centramos la sección */
+    padding: 40px 0;
+    background-color: #f0f0f0; /* Fondo gris para la sección */
+    margin-top: 40px; /* Ajusta el valor según sea necesario */
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    margin-bottom: 40px;
+}
+
+.section-product .container-product {
+    width: 80%;
+    background-color: #d9d9d9; /* Fondo gris claro para el contenedor */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    z-index: 1; /* Asegura que el contenido esté por encima del pseudo-elemento */
+}
+
+/* Pseudo-elemento para el adorno en forma de "L" */
+.section-product::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px; /* Ajusta el ancho del adorno */
+    height: 160px; /* Ajusta el alto del adorno */
+    border-left: 15px solid #72bc2f; /* Color y grosor del borde izquierdo */
+    border-bottom: 15px solid #72bc2f; /* Color y grosor del borde inferior */
+    z-index: 0; /* Coloca el adorno detrás del contenido */
+}
+
+.left-image img {
+    width: 100%; /* Aseguramos que la imagen ocupe el 100% de su contenedor */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-section .title {
+    text-align: center;
+    font-size: 3rem; /* Tamaño grande para el texto */
+    color: #72bc2f;
+    margin-top: 20px;
+    font-weight: bold; /* Texto en negritas */
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.nav-tabs .nav-link {
+    border: none;
+    color: #555;
+    padding: 10px 15px;
+    background: none;
+    cursor: pointer;
+}
+.nav-tabs .nav-link:hover {
+    color: #72bc2f;
+}
+.nav-tabs .nav-link.active {
+    color: #72bc2f;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #72bc2f;
+}
+.table-container {
+    margin-top: 20px;
+}
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 15px;
+}
+
+
+.product {
+    text-align: center;
+}
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 0.9em;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    display: block;
+}
+
+.item-info {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0.9em;
+}
+
+.item-info .titulo {
+    font-weight: bold;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contactForm {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.fa-2x {
+    color: #000;
+}
