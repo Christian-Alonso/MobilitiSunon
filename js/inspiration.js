@@ -44,7 +44,7 @@ function displaySolutions(page) {
                     <div class="card-body">
                         <h5 class="card-title">${solution.title}</h5>
                         <p class="card-text">${solution.description}</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <a href="blog.html" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
