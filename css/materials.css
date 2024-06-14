@@ -1,0 +1,36 @@
+.material-card {
+    margin-bottom: 20px;
+}
+.material-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.filter-section {
+    margin-bottom: 20px;
+}
+.pagination {
+    justify-content: center;
+}
+.active-filter {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #72bc2f;
+    border-color: #72bc2f;
+}
+.btn-primary:hover {
+    background-color: #5a9b23;
+    border-color: #5a9b23;
+}
+.pagination .page-item.active .page-link {
+    background-color: #72bc2f;
+    border-color: #72bc2f;
+}
+.pagination .page-link {
+    color: #72bc2f;
+}
+.pagination .page-link:hover {
+    color: #5a9b23;
+}
