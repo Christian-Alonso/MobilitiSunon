@@ -30,6 +30,10 @@
 .hover-box {
     background-color: #343a40;
     transition: background-color 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hover-box:hover {
