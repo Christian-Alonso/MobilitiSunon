@@ -1,30 +1,31 @@
 const solutions = [
-    { title: "Inspiración 1", category: "Salud", description: "Descripción de la inspiración 1", image: "images/solution1.jpg" },
-    { title: "Inspiración 2", category: "Energía", description: "Descripción de la inspiración 2", image: "images/solution2.jpg" },
-    { title: "Inspiración 3", category: "Finanzas", description: "Descripción de la inspiración 3", image: "images/solution3.jpg" },
-    { title: "Inspiración 4", category: "Gobierno", description: "Descripción de la inspiración 4", image: "images/solution4.jpg" },
-    { title: "Inspiración 5", category: "Educación", description: "Descripción de la inspiración 5", image: "images/solution5.jpg" },
-    { title: "Inspiración 6", category: "Tecnología", description: "Descripción de la inspiración 6", image: "images/solution6.jpg" },
-    { title: "Inspiración 7", category: "Transporte", description: "Descripción de la inspiración 7", image: "images/solution7.jpg" },
-    { title: "Inspiración 8", category: "Construcción", description: "Descripción de la inspiración 8", image: "images/solution8.jpg" },
-    { title: "Inspiración 9", category: "Retail", description: "Descripción de la inspiración 9", image: "images/solution9.jpg" },
-    { title: "Inspiración 10", category: "Manufactura", description: "Descripción de la inspiración 10", image: "images/solution10.jpg" },
-    { title: "Inspiración 11", category: "Salud", description: "Descripción de la inspiración 11", image: "images/solution11.jpg" },
-    { title: "Inspiración 12", category: "Energía", description: "Descripción de la inspiración 12", image: "images/solution12.jpg" },
-    { title: "Inspiración 13", category: "Finanzas", description: "Descripción de la inspiración 13", image: "images/solution13.jpg" },
-    { title: "Inspiración 14", category: "Gobierno", description: "Descripción de la inspiración 14", image: "images/solution14.jpg" },
-    { title: "Inspiración 15", category: "Educación", description: "Descripción de la inspiración 15", image: "images/solution15.jpg" },
-    { title: "Inspiración 16", category: "Tecnología", description: "Descripción de la inspiración 16", image: "images/solution16.jpg" },
-    { title: "Inspiración 17", category: "Transporte", description: "Descripción de la inspiración 17", image: "images/solution17.jpg" },
-    { title: "Inspiración 18", category: "Construcción", description: "Descripción de la inspiración 18", image: "images/solution18.jpg" },
-    { title: "Inspiración 19", category: "Retail", description: "Descripción de la inspiración 19", image: "images/solution19.jpg" },
-    { title: "Inspiración 20", category: "Manufactura", description: "Descripción de la inspiración 20", image: "images/solution20.jpg" },
-    { title: "Inspiración 21", category: "Salud", description: "Descripción de la inspiración 21", image: "images/solution21.jpg" },
-    { title: "Inspiración 22", category: "Energía", description: "Descripción de la inspiración 22", image: "images/solution22.jpg" },
-    { title: "Inspiración 23", category: "Finanzas", description: "Descripción de la inspiración 23", image: "images/solution23.jpg" },
-    { title: "Inspiración 24", category: "Gobierno", description: "Descripción de la inspiración 24", image: "images/solution24.jpg" },
-    { title: "Inspiración 25", category: "Educación", description: "Descripción de la inspiración 25", image: "images/solution25.jpg" },
+    { title: "Digital Workstation are Reashaping", category: "Tecnologia", description: "Amid the catalyzing effects of the pandemic and the continuous rise in commercial rents, more and more companies are beginning to rethink the Key Performance Indicators (KPIs) of office space.", image: "images/Blog/inici.jpg", url: "blog1.html" },
+    { title: "Inspiración 2", category: "Energía", description: "Descripción de la inspiración 2", image: "images/solution2.jpg", url: "blog.html" },
+    { title: "Inspiración 3", category: "Finanzas", description: "Descripción de la inspiración 3", image: "images/solution3.jpg", url: "blog.html" },
+    { title: "Inspiración 4", category: "Gobierno", description: "Descripción de la inspiración 4", image: "images/solution4.jpg", url: "blog.html" },
+    { title: "Inspiración 5", category: "Educación", description: "Descripción de la inspiración 5", image: "images/solution5.jpg", url: "blog.html" },
+    { title: "Inspiración 6", category: "Tecnología", description: "Descripción de la inspiración 6", image: "images/solution6.jpg", url: "blog.html" },
+    { title: "Inspiración 7", category: "Transporte", description: "Descripción de la inspiración 7", image: "images/solution7.jpg", url: "blog.html" },
+    { title: "Inspiración 8", category: "Construcción", description: "Descripción de la inspiración 8", image: "images/solution8.jpg", url: "blog.html" },
+    { title: "Inspiración 9", category: "Retail", description: "Descripción de la inspiración 9", image: "images/solution9.jpg", url: "blog.html" },
+    { title: "Inspiración 10", category: "Manufactura", description: "Descripción de la inspiración 10", image: "images/solution10.jpg", url: "blog.html" },
+    { title: "Inspiración 11", category: "Salud", description: "Descripción de la inspiración 11", image: "images/solution11.jpg", url: "blog.html" },
+    { title: "Inspiración 12", category: "Energía", description: "Descripción de la inspiración 12", image: "images/solution12.jpg", url: "blog.html" },
+    { title: "Inspiración 13", category: "Finanzas", description: "Descripción de la inspiración 13", image: "images/solution13.jpg", url: "blog.html" },
+    { title: "Inspiración 14", category: "Gobierno", description: "Descripción de la inspiración 14", image: "images/solution14.jpg", url: "blog.html" },
+    { title: "Inspiración 15", category: "Educación", description: "Descripción de la inspiración 15", image: "images/solution15.jpg", url: "blog.html" },
+    { title: "Inspiración 16", category: "Tecnología", description: "Descripción de la inspiración 16", image: "images/solution16.jpg", url: "blog.html" },
+    { title: "Inspiración 17", category: "Transporte", description: "Descripción de la inspiración 17", image: "images/solution17.jpg", url: "blog.html" },
+    { title: "Inspiración 18", category: "Construcción", description: "Descripción de la inspiración 18", image: "images/solution18.jpg", url: "blog.html" },
+    { title: "Inspiración 19", category: "Retail", description: "Descripción de la inspiración 19", image: "images/solution19.jpg", url: "blog.html" },
+    { title: "Inspiración 20", category: "Manufactura", description: "Descripción de la inspiración 20", image: "images/solution20.jpg", url: "blog.html" },
+    { title: "Inspiración 21", category: "Salud", description: "Descripción de la inspiración 21", image: "images/solution21.jpg", url: "blog.html" },
+    { title: "Inspiración 22", category: "Energía", description: "Descripción de la inspiración 22", image: "images/solution22.jpg", url: "blog.html" },
+    { title: "Inspiración 23", category: "Finanzas", description: "Descripción de la inspiración 23", image: "images/solution23.jpg", url: "blog.html" },
+    { title: "Inspiración 24", category: "Gobierno", description: "Descripción de la inspiración 24", image: "images/solution24.jpg", url: "blog.html" },
+    { title: "Inspiración 25", category: "Educación", description: "Descripción de la inspiración 25", image: "images/solution25.jpg", url: "blog.html" }
 ];
+
 
 const itemsPerPage = 6;
 let currentPage = 1;
@@ -44,7 +45,7 @@ function displaySolutions(page) {
                     <div class="card-body">
                         <h5 class="card-title">${solution.title}</h5>
                         <p class="card-text">${solution.description}</p>
-                        <a href="blog.html" class="btn btn-primary">Leer más</a>
+                        <a href="${solution.url}" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
             </div>
